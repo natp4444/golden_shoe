@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row-md-4">
+    <div class="product-item">
+      <div class="pi-img-wrapper">
+        <% if product.avatar.attached? %>
+          <%=image_tag(product.avatar, :size => 300)%>
+        <%end%>
+      </div>
+      <h4 class="mb-1" style="letter-spacing: 2px;"><%=product.title%></h4>
+      <h5 class="mb-1" style="letter-spacing: 2px;">£<%=product.price%></h5>
+    </div>
+  </div>
+</div>
+<br/>
+<br/>

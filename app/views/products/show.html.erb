@@ -15,5 +15,9 @@
   <%= @product.price %>
 </p>
 
+<% if @product.avatar.attached? %>
+  <%= image_tag(@product.avatar, :size => 150) %>
+<% end %>
+
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>

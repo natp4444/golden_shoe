@@ -26,6 +26,36 @@
     <%= form.number_field :price %>
   </div>
 
+  <div class="field">
+    <%= form.label :gender %>
+    <%= form.number_field :gender %>
+  </div>
+
+  <div class="field">
+    <%= form.label :brand %>
+    <%= form.text_area :brand %>
+  </div>
+
+  <div class="field">
+    <%= form.label :style %>
+    <%= form.text_area :style %>
+  </div>
+
+  <div class="field">
+    <%= form.label :colour %>
+    <%= form.text_area :colour %>
+  </div>
+
+  <div class="field">
+    <%= form.label :size %>
+    <%= form.number_field :size %>
+  </div>
+
+  <div class="field">
+    <%= form.label "Photo" %>
+    <%= form.file_field :avatar %>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>

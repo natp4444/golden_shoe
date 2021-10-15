@@ -1,9 +1,7 @@
 Rails.application.routes.draw do
   resources :carts
-  get 'welcome/index'
-  resources :sizes
-  resources :colours
+  get 'products/index'
   resources :products
 
-  root 'welcome#index'
+  root 'products#index'
 end
