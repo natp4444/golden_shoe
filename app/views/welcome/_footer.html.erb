@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<nav class="navbar navbar-expand-md navbar-light bg-light h4">
+    <div class="container-fluid">
+        <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+            <ul class="navbar-nav me-auto">
+                <a class="navbar-brand" href="/">
+                  <img src="assets/images/logos/1.png" width="150" alt="Golden Shoe">
+                </a>
+            </ul>
+        </div>
+      <div class="mx-auto order-0">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> New Arrivals </a>
+                  <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarScrollingDropdown">
+                      <li><a class="dropdown-item" href="#">Women</a></li>
+                      <li><a class="dropdown-item" href="#">Men</a></li>
+                      <li><a class="dropdown-item" href="#">Kids</a></li>
+                  </ul>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Women </a>
+                  <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarScrollingDropdown">
+                      <li><a class="dropdown-item" href="#">All Women</a></li>
+                      <li><a class="dropdown-item" href="#">By Brand</a></li>
+                      <li><a class="dropdown-item" href="#">By Style</a></li>
+                  </ul>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Men </a>
+                  <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarScrollingDropdown">
+                      <li><a class="dropdown-item" href="#">All Men</a></li>
+                      <li><a class="dropdown-item" href="#">By Brand</a></li>
+                      <li><a class="dropdown-item" href="#">By Style</a></li>
+                  </ul>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Kids </a>
+                  <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarScrollingDropdown">
+                      <li><a class="dropdown-item" href="#">All Kids</a></li>
+                      <li><a class="dropdown-item" href="#">By Brand</a></li>
+                      <li><a class="dropdown-item" href="#">By Style</a></li>
+                  </ul>
+              </li>
+          </div>
+        </div>
+        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <button type="button" class="btn btn-default">
+                  <%= fa_icon "user", size: '2x' %>
+                </button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn btn-default">
+                  <%= fa_icon "shopping-cart", size: '2x' %>
+                </button>
+              </li>
+              <li>
+                <div class="input-group">
+                  <input type="text" class="form-control form-control-lg" placeholder="Search">
+                  <div class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <%= fa_icon "search", size: '2x' %>
+                    </button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+        </div>
+    </div>
+</nav>
