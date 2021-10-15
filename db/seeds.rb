@@ -8,3 +8,6 @@
 
 product = Product.create(title: "Arizona Soft Footbed Leather", description: "text", price: 135, gender: 0, brand: "Birkenstock", style: "Sandal", colour: "Beige", size: 7)
 product.avatar.attach(io: File.open(Rails.root.join('public/assets/images/product_images/birkenstock.jpg')), filename: 'birkenstock.jpg')
+
+product = Product.create(title: "Arizona Soft Footbed Leather", description: "text", price: 135, gender: 0, brand: "Birkenstock", style: "Sandal", colour: "Beige", size: 7)
+product.avatar.attach(io: File.open(Rails.root.join('public/assets/images/product_images/birkenstock.jpg')), filename: 'birkenstock.jpg')
