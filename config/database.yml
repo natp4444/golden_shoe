@@ -20,4 +20,4 @@ production:
   cloud_name: "dsvcgfdtt"
   api_key: "597159574588412"
   api_secret: "OYqkA3BBzHRd_WOVQaBdqGzoTzg"
-  secure:true
+  secure: true
