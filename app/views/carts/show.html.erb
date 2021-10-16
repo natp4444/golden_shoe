@@ -1,24 +1,65 @@
-<h2>My Cart</h2>
-<%if @cart.sub_total>0%>
-  <ul>
-    <% @cart.cart_products.each do |cart_product| %>
-      <li>Product: <%= cart_product.product.title %>/ Price: <%= number_to_currency(cart_product.product.price) %>/ Total Price: <%= number_to_currency(cart_product.total_price) %>
-      <ul>
-        <li>
-          <%= button_to "Add one", cart_product_add_path(:id => cart_product), method: "post" %>
-          <%= button_to "Reduce one", cart_product_reduce_path(:id => cart_product), method: "post" %>
-        </li>
-        <li>
-          <%= button_to "Remove item", cart_product_path(cart_product), method: :delete %>
-        </li>
-      </ul>
-    <% end %>
-  </ul>
+<div class="container mt-5">
+  <%if @cart.sub_total>0%>
+    <ul>
+      <% @cart.cart_products.each do |cart_product| %>
+        <div class="container-flex mt-2">
+          <div class="card">
+            <div class="row g-0">
+              <div class="col-md-8">
+                <div class="container-flex">
+                  <div class="row">
+                    <div class="img"><%= image_tag(cart_product.product.avatar, :size => 300) %></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="p-3 right-side">
+                  <h3><%= cart_product.product.title %></h3></span>
+                  <h3>£<%=cart_product.product.price%></h3>
+                  <div class="row">
+                    <div class="col">
+                      <%= button_to "Add one", cart_product_add_path(:id => cart_product), method: "post", class: 'btn btn-outline-dark' %>
+                    </div>
+                    <div class="col">
+                      <%= button_to "Reduce one", cart_product_reduce_path(:id => cart_product), method: "post", class: 'btn btn-outline-dark' %>
+                    </div>
+                    <div class="col">
+                      <%= button_to "Remove item", cart_product_path(cart_product), method: :delete, class: 'btn btn-outline-dark' %>
+                    </div>
+                  </div>
 
-  <h3>Sub total: £<%= @cart.sub_total %></h3>
-  <%= button_to "Proceed to checkout", root_path %><br>
-
-  <%= button_to "Empty cart", cart_path(@current_cart), method: :delete, data: {confirm: "Are you sure?"} %>
-<%else%>
-  <h3>Your cart is empty! Check out our products <%= link_to "here! ", products_path %> </h3>
-<%end%>
+                  <div class="row mt-4 justify-content-end">
+                    <div class="col-6">
+                      <h4>Subtotal: £<%=cart_product.total_price%></h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <%end%>
+      <div class="row justify-content-end">
+        <div class="col-3">
+          <div class="row justify-content-end">
+            <h3>Sub total: £<%= @cart.sub_total %></h3>
+          </div>
+          <div class="row mt-1">
+            <%= button_to "Proceed to checkout", cart_path(@current_cart), method: :delete, class: 'btn btn-outline-dark float-right' %><br>
+          </div>
+          <div class="row mt-1">
+            <%= button_to "Empty cart", cart_path(@current_cart), method: :delete, data: {confirm: "Are you sure?"}, class: 'btn btn-outline-dark' %>
+          </div>
+        </div>
+      </div>
+    </ul>
+  <%else%>
+  <div class="row justify-content-center">
+    <div class="col-6">
+      <div class="row">
+        <h3>Your cart is empty! Check out our products <%= link_to "here! ", products_path %> </h3>
+      </div>
+    </div>
+  </div>
+  <%end%>
+</div>

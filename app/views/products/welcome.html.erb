@@ -6,10 +6,10 @@
         <img src="products/assets/images/index_page/carousel/carousel1.jpg" class="d-block w-100" alt="slide 1">
         <div class="carousel-caption d-none d-md-block" style="left: 75%;">
           <div class="row">
-            <button type="button" class="btn text-left btn-outline-dark bg-white btn-lg mb-2">Shop Women</button>
+            <%=link_to "Shop Women", products_path(gender: "women"), class: 'btn text-left btn-outline-dark bg-white btn-lg mb-2'%>
           </div>
           <div class="row">
-            <button type="button" class="btn btn-outline-dark bg-white btn-lg mt-2">Shop Men</button>
+            <%=link_to "Shop Men", products_path(gender: "men"), class: 'btn text-left btn-outline-dark bg-white btn-lg mb-2'%>
           </div>
         </div>
       </div>
@@ -17,10 +17,10 @@
         <img src="products/assets/images/index_page/carousel/carousel2.jpg" class="d-block w-100" alt="slide 2">
         <div class="carousel-caption d-none d-md-block" style="right: 75%; bottom: 20%;">
           <div class="row">
-            <button type="button" class="btn text-left btn-outline-dark bg-white btn-lg mb-2">Shop Women</button>
+            <%=link_to "Shop Women", products_path(gender: "women"), class: 'btn text-left btn-outline-dark bg-white btn-lg mb-2'%>
           </div>
           <div class="row">
-            <button type="button" class="btn btn-outline-dark bg-white btn-lg mt-2">Shop Men</button>
+            <%=link_to "Shop Men", products_path(gender: "men"), class: 'btn text-left btn-outline-dark bg-white btn-lg mb-2'%>
           </div>
         </div>
       </div>
@@ -28,13 +28,13 @@
         <img src="products/assets/images/index_page/carousel/carousel3.jpg" class="d-block w-100" alt="slide 3">
         <div class="carousel-caption d-none d-md-block" style="left: 75%;">
           <div class="row">
-            <button type="button" class="btn text-left btn-outline-dark bg-white btn-lg mb-2">Shop Women</button>
+            <%=link_to "Shop Women", products_path(gender: "women"), class: 'btn text-left btn-outline-dark bg-white btn-lg mb-2'%>
           </div>
           <div class="row">
-            <button type="button" class="btn btn-outline-dark bg-white btn-lg mb-2 mt-2">Shop Men</button>
+            <%=link_to "Shop Men", products_path(gender: "men"), class: 'btn text-left btn-outline-dark bg-white btn-lg mb-2'%>
           </div>
           <div class="row">
-            <button type="button" class="btn btn-outline-dark bg-white btn-lg mb-2 mt-2">Shop Kids</button>
+            <%=link_to "Shop Kids", products_path(gender: "kids"), class: 'btn text-left btn-outline-dark bg-white btn-lg mb-2'%>
           </div>
         </div>
       </div>
@@ -42,13 +42,13 @@
         <img src="products/assets/images/index_page/carousel/carousel4.png" class="d-block w-100" alt="slide 4">
         <div class="carousel-caption d-none d-md-block" style="right: 75%;">
           <div class="row">
-            <button type="button" class="btn text-left btn-outline-dark bg-white btn-lg mb-2">Shop Women</button>
+            <%=link_to "Shop Women", products_path(gender: "women"), class: 'btn text-left btn-outline-dark bg-white btn-lg mb-2'%>
           </div>
           <div class="row">
-            <button type="button" class="btn btn-outline-dark bg-white btn-lg mb-2 mt-2">Shop Men</button>
+            <%=link_to "Shop Men", products_path(gender: "men"), class: 'btn text-left btn-outline-dark bg-white btn-lg mb-2'%>
           </div>
           <div class="row">
-            <button type="button" class="btn btn-outline-dark bg-white btn-lg mb-2 mt-2">Shop Kids</button>
+            <%=link_to "Shop Kids", products_path(gender: "kids"), class: 'btn text-left btn-outline-dark bg-white btn-lg mb-2'%>
           </div>
         </div>
       </div>
@@ -77,7 +77,7 @@
       <div class="container">
         <div class="row pb-5 bt-0">
           <div class="col text-center">
-            <button class="btn btn-outline-dark btn-lg">See More</button>
+            <%=link_to "See More", products_path, class: 'btn btn-outline-dark btn-lg'%>
           </div>
         </div>
       </div>
@@ -87,13 +87,13 @@
   <div class="container-fluid">
     <div class="row p-4">
       <div class="col">
-        <%=link_to image_tag("/products/assets/images/index_page/shop_by_gender/woman.jpg", :width => '100%', class: 'dock-item'), products_path%>
+        <%=link_to image_tag("/products/assets/images/index_page/shop_by_gender/woman.jpg", :width => '100%', class: 'dock-item'), products_path(gender: "women")%>
       </div>
       <div class="col">
-        <%=link_to image_tag("/products/assets/images/index_page/shop_by_gender/man.jpg", :width => '100%', class: 'dock-item'), products_path%>
+        <%=link_to image_tag("/products/assets/images/index_page/shop_by_gender/man.jpg", :width => '100%', class: 'dock-item'), products_path(gender: "men")%>
       </div>
       <div class="col">
-      <%=link_to image_tag("/products/assets/images/index_page/shop_by_gender/kid.jpg", :width => '100%', class: 'dock-item'), products_path%>
+      <%=link_to image_tag("/products/assets/images/index_page/shop_by_gender/kid.jpg", :width => '100%', class: 'dock-item'), products_path(gender: "kids")%>
       </div>
     </div>
   </div>
@@ -150,7 +150,7 @@
             <h5 class = "text-center"> Is your question not answered here? Get in touch with our friendly support team!</h5>
           </div>
           <div class="row p-2">
-            <button type="button" class="btn btn-outline-dark btn-lg">EXCHANGES AND RETURNS</button>
+            <button type="button" class="btn btn-outline-dark btn-lg">CONTACT US</button>
           </div>
         </div>
       </div>
@@ -163,7 +163,7 @@
       <div class="container">
         <div class="row pb-5 bt-0">
           <div class="col text-center">
-            <button class="btn btn-outline-dark btn-lg">Sign Up</button>
+            <button class="btn btn-outline-dark btn-lg">Sign Me Up!</button>
           </div>
         </div>
       </div>

@@ -12,6 +12,7 @@
           <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle text-dark" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> New Arrivals </a>
                 <ul class="dropdown-menu dropdown-menu-right text-center" aria-labelledby="navbarScrollingDropdown">
+                  <li><%=link_to 'All', products_path, :class => 'dropdown-item'%></li>
                   <li><%=link_to 'Women', products_path(gender: "women"), :class => 'dropdown-item'%></li>
                   <li><%=link_to 'Men', products_path(gender: "men"), :class => 'dropdown-item'%></li>
                   <li><%=link_to 'Kids', products_path(gender: "kids"), :class => 'dropdown-item'%></li>

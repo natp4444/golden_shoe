@@ -9,7 +9,7 @@
       <h4 class="mb-1" style="letter-spacing: 2px;"><%=product.title%></h4>
       <h5 class="mb-1" style="letter-spacing: 2px;">£<%=product.price%></h5>
     </div>
-    <%=button_to "Add to cart", cart_products_path(:product_id => product.id)%>
+      <%=button_to "Add to cart", cart_products_path(:product_id => product.id), class: 'btn btn-outline-dark', method: "post"%>
   </div>
 </div>
 <br/>

@@ -4,6 +4,16 @@ class ApplicationController < ActionController::Base
 
   before_action :current_cart
 
+  protected
+
+    def after_sign_in_path_for(resource)
+      root_path
+    end
+
+    def after_sign_out_path_for(resource)
+      root_path
+    end
+
   private
     def current_cart
       if session[:cart_id]
