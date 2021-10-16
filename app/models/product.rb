@@ -1,4 +1,4 @@
 class Product < ApplicationRecord
   has_one_attached :avatar
-  belongs_to :cart, optional: true
+  has_many :cart_products, dependent: :destroy
 end
