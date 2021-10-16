@@ -7,7 +7,6 @@ development:
   cloud_name: "dsvcgfdtt"
   api_key: "597159574588412"
   api_secret: "OYqkA3BBzHRd_WOVQaBdqGzoTzg"
-  secure: true
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -20,4 +19,3 @@ production:
   cloud_name: "dsvcgfdtt"
   api_key: "597159574588412"
   api_secret: "OYqkA3BBzHRd_WOVQaBdqGzoTzg"
-  secure: true
