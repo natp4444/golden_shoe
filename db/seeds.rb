@@ -1,7 +1,7 @@
 Product.destroy_all
 
 product = Product.create(title: "Arizona Soft Footbed Leather", description: "You just can't believe how comfortable thesse shoes are. You'll definitely never take them off, come rain or shine!", price: 135, gender: "women", brand: "Birkenstock", style: "Sandal", colour: "Beige", size: 7)
-product.avatar.attach(io: File.open(Rails.root.join('public/products/assets/images/product_images/birkenstock.jpg')), filename: 'birkenstock.jpg')
+product.avatar.attach(io: File.open('public/products/assets/images/product_images/birkenstock.jpg'), filename: 'birkenstock.jpg')
 
 product = Product.create(title: "Steve Madden Juliet Beaded Sandals", description: "Crafted from the finest leather and blanketed in faux pearls and trimmed in tiny sparkling beads, the JULIET sandal is giving us life.", price: 120, gender: "women", brand: "Steve Madden", style: "Sandal", colour: "Beige", size: 5)
 product.avatar.attach(io: File.open(Rails.root.join('public/products/assets/images/product_images/beaded_sandals.jpg')), filename: 'beaded_sandals.jpg')
