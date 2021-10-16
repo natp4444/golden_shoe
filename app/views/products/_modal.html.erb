@@ -35,7 +35,13 @@
   </div>
 </div>
 
-<script>
-  var myModal = new bootstrap.Modal(document.getElementById('myModal'), {})
-  myModal.show()
+
+<script type="text/javascript">
+  $(function () {
+    console.log($.cookie('pop'));
+    if (!$.cookie('pop')) {
+      $('#myModal').modal('show');
+      $.cookie('pop', '1');
+    }
+  })
 </script>
