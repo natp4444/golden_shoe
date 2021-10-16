@@ -4,8 +4,6 @@ default: &default
   timeout: 5000
 
 development:
-  <<: *default
-  database: flatiron_mod3_development
   cloud_name: "dsvcgfdtt"
   api_key: "597159574588412"
   api_secret: "OYqkA3BBzHRd_WOVQaBdqGzoTzg"
@@ -19,8 +17,6 @@ test:
   database: flatiron_mod3_test
 
 production:
-  <<: *default
-  database: flatiron_mod3_production
   cloud_name: "dsvcgfdtt"
   api_key: "597159574588412"
   api_secret: "OYqkA3BBzHRd_WOVQaBdqGzoTzg"
