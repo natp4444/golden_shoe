@@ -1,0 +1,218 @@
+<html>
+  <%= render 'modal'%>
+  <div id="carouselExampleControls" class="carousel slide " data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="products/assets/images/index_page/carousel/carousel1.jpg" class="d-block w-100" alt="slide 1">
+        <div class="carousel-caption d-none d-md-block" style="left: 75%;">
+          <div class="row">
+            <button type="button" class="btn text-left btn-outline-dark bg-white btn-lg mb-2">Shop Women</button>
+          </div>
+          <div class="row">
+            <button type="button" class="btn btn-outline-dark bg-white btn-lg mt-2">Shop Men</button>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="products/assets/images/index_page/carousel/carousel2.jpg" class="d-block w-100" alt="slide 2">
+        <div class="carousel-caption d-none d-md-block" style="right: 75%; bottom: 20%;">
+          <div class="row">
+            <button type="button" class="btn text-left btn-outline-dark bg-white btn-lg mb-2">Shop Women</button>
+          </div>
+          <div class="row">
+            <button type="button" class="btn btn-outline-dark bg-white btn-lg mt-2">Shop Men</button>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="products/assets/images/index_page/carousel/carousel3.jpg" class="d-block w-100" alt="slide 3">
+        <div class="carousel-caption d-none d-md-block" style="left: 75%;">
+          <div class="row">
+            <button type="button" class="btn text-left btn-outline-dark bg-white btn-lg mb-2">Shop Women</button>
+          </div>
+          <div class="row">
+            <button type="button" class="btn btn-outline-dark bg-white btn-lg mb-2 mt-2">Shop Men</button>
+          </div>
+          <div class="row">
+            <button type="button" class="btn btn-outline-dark bg-white btn-lg mb-2 mt-2">Shop Kids</button>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="products/assets/images/index_page/carousel/carousel4.png" class="d-block w-100" alt="slide 4">
+        <div class="carousel-caption d-none d-md-block" style="right: 75%;">
+          <div class="row">
+            <button type="button" class="btn text-left btn-outline-dark bg-white btn-lg mb-2">Shop Women</button>
+          </div>
+          <div class="row">
+            <button type="button" class="btn btn-outline-dark bg-white btn-lg mb-2 mt-2">Shop Men</button>
+          </div>
+          <div class="row">
+            <button type="button" class="btn btn-outline-dark bg-white btn-lg mb-2 mt-2">Shop Kids</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <div class="container-fluid">
+    <div class="row pt-5 pb-2 text-center">
+      <h3> NEW ARRIVALS </h3>
+    </div>
+    <div class="row bg">
+      <% @products.first(8).each do |product| %>
+        <div class="col-3">
+          <%= render 'product_card', product: product%>
+        </div>
+      <% end %>
+      <div class="container">
+        <div class="row pb-5 bt-0">
+          <div class="col text-center">
+            <button class="btn btn-outline-dark btn-lg">See More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row p-4">
+      <div class="col">
+        <%=link_to image_tag("/products/assets/images/index_page/shop_by_gender/woman.jpg", :width => '100%', class: 'dock-item'), products_path%>
+      </div>
+      <div class="col">
+        <%=link_to image_tag("/products/assets/images/index_page/shop_by_gender/man.jpg", :width => '100%', class: 'dock-item'), products_path%>
+      </div>
+      <div class="col">
+      <%=link_to image_tag("/products/assets/images/index_page/shop_by_gender/kid.jpg", :width => '100%', class: 'dock-item'), products_path%>
+      </div>
+    </div>
+  </div>
+
+  <br/>
+  <br/>
+
+  <div class="container-fluid">
+    <div class="row pb-3 mb-5">
+      <h2 class = "text-center"> WE'RE HERE TO HELP!</h2>
+
+      <div class="row row-cols-2 row-cols-lg-4 g-3 g-lg-3">
+        <div class="card p-3">
+          <div class="row">
+            <h2 class = "text-center"> Fast, free shipping </h2>
+          </div>
+          <div class="row p-2">
+            <h5 class = "text-center">Free shipping for orders over £50 and free tracking on all orders, click here for updates.</h5>
+          </div>
+          <div class="row p-2">
+            <button type="button" class="btn btn-outline-dark btn-lg">TRACK MY ORDER</button>
+          </div>
+        </div>
+
+        <div class="card p-3">
+          <div class="row">
+            <h2 class = "text-center"> Stress-Free Returns </h2>
+          </div>
+          <div class="row p-2">
+            <h5 class = "text-center"> If you're not happy you can return or exchange your order for free within 30 days.</h5>
+          </div>
+          <div class="row p-2">
+            <button type="button" class="btn btn-outline-dark btn-lg">EXCHANGES AND RETURNS</button>
+          </div>
+        </div>
+
+        <div class="card p-3">
+          <div class="row">
+            <h2 class = "text-center"> Shoe Sizing Guide </h2>
+          </div>
+          <div class="row p-2">
+            <h5 class = "text-center"> Not sure which size to order? Let us help you find your perfect fit with our super easy sizing guide!</h5>
+          </div>
+          <div class="row p-2">
+            <button type="button" class="btn btn-outline-dark btn-lg">SHOE SIZE GUIDE</button>
+          </div>
+        </div>
+
+        <div class="card p-3">
+          <div class="row">
+            <h2 class = "text-center"> Need Help? </h2>
+          </div>
+          <div class="row p-2">
+            <h5 class = "text-center"> Is your question not answered here? Get in touch with our friendly support team!</h5>
+          </div>
+          <div class="row p-2">
+            <button type="button" class="btn btn-outline-dark btn-lg">EXCHANGES AND RETURNS</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <img class="card-img-top img-thumbnail" src="/products/assets/images/index_page/sign_up_banner.jpg" alt="alt text">
+    <div class="card-img-overlay" style="top: 90%;">
+      <div class="container">
+        <div class="row pb-5 bt-0">
+          <div class="col text-center">
+            <button class="btn btn-outline-dark btn-lg">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row pt-5">
+      <h3 class="text-center"> SHOP BY BRAND </h3>
+    </div>
+    <div class="row p-5">
+      <div class="col">
+        <img class="img-fluid" src="/products/assets/images/index_page/shoe_brand_logos/1.jpg">
+      </div>
+      <div class="col">
+        <img class="img-fluid" src="/products/assets/images/index_page/shoe_brand_logos/2.png">
+      </div>
+      <div class="col">
+        <img class="img-fluid" src="/products/assets/images/index_page/shoe_brand_logos/3.jpg">
+      </div>
+      <div class="col">
+        <img class="img-fluid" src="/products/assets/images/index_page/shoe_brand_logos/4.jpg">
+      </div>
+      <div class="col">
+        <img class="img-fluid" src="/products/assets/images/index_page/shoe_brand_logos/5.png">
+      </div>
+      <div class="col">
+        <img class="img-fluid" src="/products/assets/images/index_page/shoe_brand_logos/6.png">
+      </div>
+      <div class="col">
+        <img class="img-fluid" src="/products/assets/images/index_page/shoe_brand_logos/7.png">
+      </div>
+      <div class="col">
+        <img class="img-fluid" src="/products/assets/images/index_page/shoe_brand_logos/8.png">
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="card">
+    <img class="card-img-top img-thumbnail" src="/products/assets/images/index_page/about_us_banner.jpg" alt="alt text">
+    <div class="card-img-overlay" style="top: 75%;">
+      <div class="container">
+        <div class="row pb-5 bt-0">
+          <div class="col text-center">
+            <button class="btn btn-outline-dark bg-light btn-lg">Find Out More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
