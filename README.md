@@ -6,7 +6,7 @@
 Ruby on Rails, Postgresql, Boostrap v5, Devise (for user authentication), CSS and Webpacker and deployed to Heroku.
 
 ### Live Demo
-<img src="https://github.com/natp4444/golden_shoe/blob/master/public/assets/demo/Demo_SparkVideo.gif" width="600" />
+<img src="https://github.com/natp4444/golden_shoe/blob/master/public/assets/demo/demo.gif" width="600" />
 
 ### Access it here:
 **https://golden-shoe-store.herokuapp.com/**
