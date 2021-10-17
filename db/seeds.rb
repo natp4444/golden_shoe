@@ -1,13 +1,16 @@
 Product.destroy_all
 
 product = Product.create(title: "Arizona Soft Footbed Leather", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus turpis ac libero maximus facilisis. Morbi ultrices sollicitudin enim et suscipit. Aliquam at facilisis orci. Quisque a diam odio. In sapien felis, ultrices a consequat et, sodales eu neque. Mauris sit amet sapien lectus.", price: 135, gender: "women", brand: "Birkenstock", style: "Sandal", colour: "Beige", size: 7)
-product.avatar.attach(io: File.open('public/assets/product_images/birkenstock.jpg'), filename: 'birkenstock.jpg')
+product.avatar.attach(io: File.open(Rails.root.join('app', 'assets', 'images', 'birkenstock.jpg')), filename: 'birkenstock.jpg', content_type: 'image/jpg')
 
-# product = Product.create(title: "Steve Madden Juliet Beaded Sandals", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus turpis ac libero maximus facilisis. Morbi ultrices sollicitudin enim et suscipit. Aliquam at facilisis orci. Quisque a diam odio. In sapien felis, ultrices a consequat et, sodales eu neque. Mauris sit amet sapien lectus.", price: 120, gender: "women", brand: "Steve Madden", style: "Sandal", colour: "Beige", size: 5)
-# product.avatar.attach(io: File.open('public/assets/product_images/beaded_sandals.jpg'), filename: 'beaded_sandals.jpg')
+product1 = Product.create(title: "Steve Madden Juliet Beaded Sandals", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus turpis ac libero maximus facilisis. Morbi ultrices sollicitudin enim et suscipit. Aliquam at facilisis orci. Quisque a diam odio. In sapien felis, ultrices a consequat et, sodales eu neque. Mauris sit amet sapien lectus.", price: 120, gender: "women", brand: "Steve Madden", style: "Sandal", colour: "Beige", size: 5)
+product1.avatar.attach(io: File.open(Rails.root.join('app', 'assets', 'images', 'favicon.png')), filename: 'favicon.png', content_type: 'image/png')
 
-# product = Product.create(title: "Nike Air Zoom Pegasus", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus turpis ac libero maximus facilisis. Morbi ultrices sollicitudin enim et suscipit. Aliquam at facilisis orci. Quisque a diam odio. In sapien felis, ultrices a consequat et, sodales eu neque. Mauris sit amet sapien lectus.", price: 120, gender: "men", brand: "Nike", style: "Sneaker", colour: "Black", size: 12)
-# product.avatar.attach(io: File.open('public/assets/product_images/black_nike.jpg'), filename: 'black_nike.jpg')
+product2 = Product.create(title: "Steve Madden Juliet Beaded Sandals", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus turpis ac libero maximus facilisis. Morbi ultrices sollicitudin enim et suscipit. Aliquam at facilisis orci. Quisque a diam odio. In sapien felis, ultrices a consequat et, sodales eu neque. Mauris sit amet sapien lectus.", price: 120, gender: "women", brand: "Steve Madden", style: "Sandal", colour: "Beige", size: 5)
+product2.avatar.attach(io: File.open(Rails.root.join('public', 'assets', 'favicon.png')), filename: 'favicon.png', content_type: 'image/png')
+
+product3 = Product.create(title: "Nike Air Zoom Pegasus", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus turpis ac libero maximus facilisis. Morbi ultrices sollicitudin enim et suscipit. Aliquam at facilisis orci. Quisque a diam odio. In sapien felis, ultrices a consequat et, sodales eu neque. Mauris sit amet sapien lectus.", price: 120, gender: "men", brand: "Nike", style: "Sneaker", colour: "Black", size: 12)
+product3.avatar.attach(io: File.open('public/assets/favicon.png'), filename: 'favicon.png', content_type: 'image/png')
 
 # product = Product.create(title: "Aldo Camilla Boot", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus turpis ac libero maximus facilisis. Morbi ultrices sollicitudin enim et suscipit. Aliquam at facilisis orci. Quisque a diam odio. In sapien felis, ultrices a consequat et, sodales eu neque. Mauris sit amet sapien lectus.", price: 67, gender: "women", brand: "Aldo", style: "Boot", colour: "Black, Nude", size: 5)
 # product.avatar.attach(io: File.open('public/assets/product_images/black-and-nude-boots-on-red.jpg'), filename: 'black-and-nude-boots-on-red.jpg')
