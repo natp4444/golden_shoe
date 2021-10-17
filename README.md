@@ -5,7 +5,7 @@ Ruby on Rails, Postgresql, Boostrap v5, Devise (for user authentication),
 
 ## Live Demo
 ![demo](https://github.com/natp4444/golden_shoe/blob/master/public/assets/demo/Demo_SparkVideo.gif)
-
+<img src="https://github.com/natp4444/golden_shoe/blob/master/public/assets/demo/Demo_SparkVideo.gif" width="200" height="200" />
 ## Access it here:
 **https://golden-shoe-store.herokuapp.com/**
 
