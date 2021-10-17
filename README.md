@@ -1,9 +1,12 @@
 # README
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Built with: Ruby on Rails, Bootstrap, CSS, Postgre
 
 https://golden-shoe-store.herokuapp.com/
+=======
+>>>>>>> parent of aea9620 (readme)
 =======
 >>>>>>> parent of aea9620 (readme)
 This README would normally document whatever steps are necessary to get the
@@ -30,6 +33,9 @@ Things you may want to cover:
 * ...
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of aea9620 (readme)
+=======
 >>>>>>> parent of aea9620 (readme)
 =======
 >>>>>>> parent of aea9620 (readme)
