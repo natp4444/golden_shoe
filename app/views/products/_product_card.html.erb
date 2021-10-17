@@ -3,7 +3,7 @@
     <div class="product-item">
       <div class="pi-img-wrapper">
         <% if product.avatar.attached? %>
-          <%=link_to image_tag(url_for(product.avatar), :size => 300), product_path(product.id), :class => 'dock-item'%>
+          <%=link_to image_tag(product.avatar, :size => 300), product_path(product.id), :class => 'dock-item'%>
         <%end%>
       </div>
       <h4 class="mb-1" style="letter-spacing: 2px;"><%=product.title%></h4>
