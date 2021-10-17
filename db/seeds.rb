@@ -1,19 +1,7 @@
 Product.destroy_all
 
 product = Product.create(title: "Arizona Soft Footbed Leather", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus turpis ac libero maximus facilisis. Morbi ultrices sollicitudin enim et suscipit. Aliquam at facilisis orci. Quisque a diam odio. In sapien felis, ultrices a consequat et, sodales eu neque. Mauris sit amet sapien lectus.", price: 135, gender: "women", brand: "Birkenstock", style: "Sandal", colour: "Beige", size: 7)
-# product.avatar.attach(io: File.open('public/assets/product_images/birkenstock.jpg'), filename: 'birkenstock.jpg')
-
-
-
-url = 'https://meme.eq8.eu/noidea.jpg'
-
-filename = File.basename(URI.parse(url).path)
-file = URI.open(url)
-
-product.avatar.attach(io: file, filename: filename, content_type: 'image/jpg')
-
-
-
+product.avatar.attach(io: File.open(File.join(File.dirname(__FILE__), 'beaded_sandals.jpg')), filename: 'birkenstock.jpg')
 
 product = Product.create(title: "Steve Madden Juliet Beaded Sandals", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus turpis ac libero maximus facilisis. Morbi ultrices sollicitudin enim et suscipit. Aliquam at facilisis orci. Quisque a diam odio. In sapien felis, ultrices a consequat et, sodales eu neque. Mauris sit amet sapien lectus.", price: 120, gender: "women", brand: "Steve Madden", style: "Sandal", colour: "Beige", size: 5)
 product.avatar.attach(io: File.open('public/assets/product_images/beaded_sandals.jpg'), filename: 'beaded_sandals.jpg')
