@@ -108,6 +108,8 @@ Then go to `localhost:3000` in your browser
 
 -  Users can add products to cart and view them on the cart page. The can increase, decrease and remove a product and empty cart. 
 
+## Other
+-  Products can be added to the site and edited using .../products/new and .../products/(:id)/edit paths, though these have not been styled and authentication hasn't been added to control who can access these paths.
 
 # What Needs to be Implemented Next
 
