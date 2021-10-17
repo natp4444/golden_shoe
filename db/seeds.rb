@@ -1,10 +1,10 @@
 Product.destroy_all
 
 product = Product.create(title: "Arizona Soft Footbed Leather", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus turpis ac libero maximus facilisis. Morbi ultrices sollicitudin enim et suscipit. Aliquam at facilisis orci. Quisque a diam odio. In sapien felis, ultrices a consequat et, sodales eu neque. Mauris sit amet sapien lectus.", price: 135, gender: "women", brand: "Birkenstock", style: "Sandal", colour: "Beige", size: 7)
-product.avatar.attach(io: File.open('app/assets/images/product_images/birkenstock.jpg'), filename: 'birkenstock.jpg')
+product.avatar.attach(io: File.open('products/assets/images/product_images/birkenstock.jpg'), filename: 'birkenstock.jpg')
 
 product = Product.create(title: "Steve Madden Juliet Beaded Sandals", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus turpis ac libero maximus facilisis. Morbi ultrices sollicitudin enim et suscipit. Aliquam at facilisis orci. Quisque a diam odio. In sapien felis, ultrices a consequat et, sodales eu neque. Mauris sit amet sapien lectus.", price: 120, gender: "women", brand: "Steve Madden", style: "Sandal", colour: "Beige", size: 5)
-product.avatar.attach(io: File.open('app/assets/images/product_images/beaded_sandals.jpg'), filename: 'beaded_sandals.jpg')
+product.avatar.attach(io: File.open('images/beaded_sandals.jpg'), filename: 'beaded_sandals.jpg')
 
 product = Product.create(title: "Nike Air Zoom Pegasus", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus turpis ac libero maximus facilisis. Morbi ultrices sollicitudin enim et suscipit. Aliquam at facilisis orci. Quisque a diam odio. In sapien felis, ultrices a consequat et, sodales eu neque. Mauris sit amet sapien lectus.", price: 120, gender: "men", brand: "Nike", style: "Sneaker", colour: "Black", size: 12)
 product.avatar.attach(io: File.open('app/assets/images/product_images/black_nike.jpg'), filename: 'black_nike.jpg')
