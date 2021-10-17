@@ -15,8 +15,7 @@ Rails.application.configure do
   # Full error reports are disabled and caching is turned on.
   config.consider_all_requests_local       = false
   config.action_controller.perform_caching = true
-  config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect'
-  config.assets.digest = true
+
   # Ensures that a master key has been made available in either ENV["RAILS_MASTER_KEY"]
   # or in config/master.key. This key is used to decrypt credentials (and other encrypted files).
   # config.require_master_key = true
@@ -28,6 +27,9 @@ Rails.application.configure do
   # Compress CSS using a preprocessor.
   # config.assets.css_compressor = :sass
 
+  # Do not fallback to assets pipeline if a precompiled asset is missed.
+  config.assets.compile = false
+
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
   # config.asset_host = 'http://assets.example.com'
 
@@ -37,8 +39,6 @@ Rails.application.configure do
 
   # Store uploaded files on the local file system (see config/storage.yml for options).
   config.active_storage.service = :local
-  config.serve_static_assets = true
-  config.assets.compile = true
 
   # Mount Action Cable outside main process or domain.
   # config.action_cable.mount_path = nil
