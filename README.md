@@ -5,11 +5,10 @@
 ### Built with:
 Ruby on Rails, Postgresql, Boostrap v5, Devise (for user authentication), CSS and Webpacker and deployed to Heroku.
 
-### Access it here:
-**https://golden-shoe-store.herokuapp.com/**
+### Access it here: **https://golden-shoe-store.herokuapp.com/**
 
 ### Live Demo
-<img src="https://github.com/natp4444/golden_shoe/blob/master/public/assets/demo/demo.gif" width="600" />
+<img src="https://github.com/natp4444/golden_shoe/blob/master/public/assets/demo/demo.gif" width="1000" />
 
 # Set Up
 
@@ -109,6 +108,8 @@ Then go to `localhost:3000` in your browser
 
 -  Users can add products to cart and view them on the cart page. The can increase, decrease and remove a product and empty cart. 
 
+## Other
+-  Products can be added to the site and edited using .../products/new and .../products/(:id)/edit paths, though these have not been styled and authentication hasn't been added to control who can access these paths.
 
 # What Needs to be Implemented Next
 
