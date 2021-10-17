@@ -3,7 +3,6 @@
 Built with: Ruby on Rails, Bootstrap, CSS, Postgre
 
 https://golden-shoe-store.herokuapp.com/
-=======
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
@@ -26,4 +25,7 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+<<<<<<< HEAD
+>>>>>>> parent of aea9620 (readme)
+=======
 >>>>>>> parent of aea9620 (readme)
