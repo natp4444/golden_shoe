@@ -1,24 +1,34 @@
-# README
+# Golden Shoe
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Built with:
+Ruby on Rails, Postgresql, Boostrap v5, Devise (for user authentication), 
 
-Things you may want to cover:
+## Live Demo
+`![grab-landing-page](https://github.com/winnie1312/grab/blob/master/grab-landingpage-winnie.gif)`
 
-* Ruby version
+## Access it here:
+**https://golden-shoe-store.herokuapp.com/**
 
-* System dependencies
+# Set Up
+ `git clone` this repository and `cd` into the directory.
+Ensure you have the following setup on your machine:
+-   Ruby on Rails 
+-   Bundler
+-   Yarn
+-   PostgreSQL
 
-* Configuration
+# To Run 
+Install dependencies:
 
-* Database creation
+`$ bundle install`
+`$ yarn install`
 
-* Database initialization
+Create, migrate and seed the database:
 
-* How to run the test suite
+`$ rails db:setup`
 
-* Services (job queues, cache servers, search engines, etc.)
+To run the project, start up the server:
 
-* Deployment instructions
+`$ rails server`
 
-* ...
+Then go to `localhost:3000` in your browser
